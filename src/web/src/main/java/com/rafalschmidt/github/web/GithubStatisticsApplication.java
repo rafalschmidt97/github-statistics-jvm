@@ -1,11 +1,11 @@
 package com.rafalschmidt.github.web;
 
-import com.rafalschmidt.github.application.HelloWorldHandler;
-import lombok.val;
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
 
+@SpringBootApplication
 public class GithubStatisticsApplication {
   public static void main(String[] args) {
-    val handler = new HelloWorldHandler();
-    System.out.println(handler.handle("World"));
+    SpringApplication.run(GithubStatisticsApplication.class, args);
   }
 }
