@@ -3,6 +3,7 @@ plugins {
 }
 
 dependencies {
+  implementation(project(":src:common"))
   implementation(project(":src:application"))
 
   implementation("org.springframework.boot:spring-boot-starter-web")
